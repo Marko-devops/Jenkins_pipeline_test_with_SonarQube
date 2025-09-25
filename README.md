@@ -12,9 +12,9 @@ Once the instance was running, I accessed Jenkins through a web browser by copyi
 Recommendation: when working with Jenkins, it's best practice to assign a static IP (Elastic IP) to ensure the IP address remains consistent, especially when the instance is stopped and restarted.
 
 #Additional Tools Installed
-Maven
+- Maven
 I installed Maven and configured it in Jenkins under the name MAVEN3.9.
-JDK 17
+- JDK 17
 To install JDK 17, I connected to the Jenkins server using Git Bash terminal, switched to the root user, and ran:
 apt install openjdk-17-jdk -y
 
