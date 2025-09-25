@@ -3,7 +3,7 @@
 I created an EC2 instance on AWS and named it Jenkins_server.
 The AMI used was Ubuntu, and the instance type was set to t2.small because t2.micro does not have enough memory to run Jenkins reliably. With a t2.micro, Jenkins would frequently crash, requiring me to stop and restart the instance often.
 For secure access, I generated a key pair named Jenkins_key.
-The security group was named Jenkins_sg, and I configured the inbound rules (screenshot attached) to allow the necessary traffic for Jenkins to function properly.
+The security group was named Jenkins_sg, and I configured the inbound rules https://github.com/Marko-devops/Jenkins_pipeline_with_SonarQube_and_Nexus/blob/main/Screenshots/Jenkins_sg.png to allow the necessary traffic for Jenkins to function properly.
 In the Advanced details section during instance creation, I provided a user data script named Jenkins.sh.
 This script contains all the essential installation steps to set up Jenkins automatically on the instance at launch.
 
