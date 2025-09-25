@@ -8,6 +8,7 @@ In the Advanced details section during instance creation, I provided a user data
 This script contains all the essential installation steps to set up Jenkins automatically on the instance at launch.
 
 #Accessing Jenkins
+
 Once the instance was running, I accessed Jenkins through a web browser by copying the public IP address of the instance and appending :8080.
 Recommendation: when working with Jenkins, it's best practice to assign a static IP (Elastic IP) to ensure the IP address remains consistent, especially when the instance is stopped and restarted.
 
