@@ -18,6 +18,7 @@ I installed Maven and configured it in Jenkins under the name MAVEN3.9.
 - JDK 17
 To install JDK 17, I connected to the Jenkins server using Git Bash terminal, switched to the root user, and ran:
 apt install openjdk-17-jdk -y
+
 After the installation, I confirmed the available JDK versions in Gitbash terminal by running: ls /usr/lib/jvm/
 The output showed the installed JDK directory: /usr/lib/jvm/java-17-openjdk-amd64
 I then copied this path into Jenkins and added it as a new tool configuration, allowing Jenkins to use JDK 17 for builds.
