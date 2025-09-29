@@ -51,6 +51,8 @@ Then, I returned to the SonarQube dashboard, went to Project Settings → Qualit
 
 This pipeline is used to verify the connectivity and communication between the Jenkins server, SonarQube, and AWS S3 services, in order to ensure that all services are functioning properly before starting the complete CI/CD process (Pipeline-test-connections.groovy).
 
+https://github.com/Marko-devops/Jenkins_pipeline_test_with_SonarQube/blob/main/Screenshots/SonarQube%20and%20AWS%20S3%20connections%20tests%20in%20Pipeline.png
+
 # Pipeline
 
 After a successful pipeline test, I added a stage 'Fetch Source Code'.
