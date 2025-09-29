@@ -13,7 +13,7 @@ The output showed the installed JDK directory /usr/lib/jvm/java-17-openjdk-amd64
 
 # SonarQube Ec2 on AWS
 
-I launched an EC2 instance on AWS named SonarQube using the Ubuntu AMI and t2.medium instance type. A SonarQube key was created for secure access. The SonarQube_sg security group was configured, including inbound rules from Jenkins_sg to allow communication between SonarQube and Jenkins. A user data script (SonarQube.sh) was provided during instance creation to automate the installation and setup of SonarQube at launch.
+I launched an EC2 instance on AWS named "SonarQube" using the Ubuntu AMI and t2.medium instance type. A SonarQube key was created for secure access. The "SonarQube_sg" security group was configured, including inbound rules from "Jenkins_sg" to allow communication between SonarQube and Jenkins. A user data script (SonarQube.sh) was provided during instance creation to automate the installation and setup of SonarQube at launch.
 Once the instance was running, SonarQube was accessed via a web browser using the instance’s public IP address on port 80.
 
 # AWS Ec2 instances
@@ -34,7 +34,7 @@ This approach allows Jenkins to interact with the S3 bucket during pipeline exec
 # Accessing Jenkins through a web browser
 
 #Additional tools installed:
- - JDK -> Set up JDK with the name jdk17. Log in to Git Bash as the root user, then copy the path /usr/lib/jvm/java-17-openjdk-amd64 into Jenkins configuration.
+ - JDK -> Set up JDK with the name "jdk17". Log in to Git Bash as the root user, then copy the path /usr/lib/jvm/java-17-openjdk-amd64 into Jenkins configuration.
  - SonarQube Scanner, version 6.2.1.4610 named "sonar6.2".
 
 #Additional plugins installed:
