@@ -4,7 +4,7 @@ I launched an EC2 instance on AWS named Jenkins_server using the Ubuntu AMI and 
 
 After launching the SonarQube Ec2 instance I added in Jenkins security gorup, inbound rules from SonarQube_sg to allow communication between Jenkins and SonarQube. 
 
-#Additional Tools Installed
+#Additional tools installed:
 - JDK 17
 - AWS CLI
 
@@ -26,4 +26,22 @@ I created an IAM policy with a JSON document that allows Jenkins to access the S
 I accessed the IAM Roles for the Jenkins EC2 instance and created a role named "s3BucketPolicy" with permissions for the "jenkinspipelines3bucket".
 I then returned to the Jenkins instance and attached the "s3BucketPolicy".
 This approach allows Jenkins to interact with the S3 bucket during pipeline execution without using AWS credentials.
+
+# Accessing Jenkins through a web browser
+
+#Additional tools installed:
+ - JDK -> Set up JDK with the name jdk17. Log in to Git Bash as the root user, then copy the path /usr/lib/jvm/java-17-openjdk-amd64 into Jenkins configuration.
+ - SonarQube Scanner, version 6.2.1.4610 named "sonar6.2".
+
+#Additional plugins installed:
+- SonarQube scanner
+- Build timestamp
+- Pipeline utility step
+- Aws steps
+
+In Jenkins, I navigated to SonarQube Servers, enabled Environment Variables, and gave the server the name "sonarserver" and then I entered the private IP of the SonarQube server with port :80.
+Next, I logged into the SonarQube server, generated a token named "sonartoken", and added it in Jenkins as a Secret Text credential. After saving it I selected the credential for the SonarQube server configuration and saved the settings again.
+
+# Accessing SonarQube through a web browser
+
 
