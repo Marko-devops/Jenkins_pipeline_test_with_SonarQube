@@ -47,7 +47,14 @@ Next, I logged into the SonarQube server, generated a token named "sonartoken", 
 In SonarQube, I created a New Project named "Jenkins_pipeline" and the I navigated to Project Settings → Quality Gates and created a new quality gate named "Jenkins_QA". I unlocked editing, added a condition for Overall Code, selected Bugs, and set the value to 10.
 Then, I returned to the SonarQube dashboard, went to Project Settings → Quality Gate, and enabled "Always use a specific Quality Gate", selecting the one I just created. Next, to allow SonarQube to notify Jenkins, I created a webhook by navigating to Project Settings → Webhooks → Create. I named it "Jenkins-webhook" and set the URL to http://"private IP of Jenkins":8080/sonarqube-webhook
 
-# Jenkins pipeline
+# Pipeline test connection between Jenkins, SonarQube, and AWS S3
+
+This pipeline is used to verify the connectivity and communication between the Jenkins server, SonarQube, and AWS S3 services, in order to ensure that all services are functioning properly before starting the complete CI/CD process (Pipeline-test-connections.groovy).
+
+# Pipeline
+
+After a successful pipeline test, I added a stage 'Fetch Source Code'.
+In the SonarQube analysis stage, I configured it to test the (test-setup.sh) file from the repository, and in the AWS S3 stage, I set it to upload the same file that was tested.
 
 
 
