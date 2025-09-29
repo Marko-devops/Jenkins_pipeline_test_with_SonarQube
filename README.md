@@ -46,3 +46,8 @@ Next, I logged into the SonarQube server, generated a token named "sonartoken", 
 
 In SonarQube, I created a New Project named "Jenkins_pipeline" and the I navigated to Project Settings → Quality Gates and created a new quality gate named "Jenkins_QA". I unlocked editing, added a condition for Overall Code, selected Bugs, and set the value to 10.
 Then, I returned to the SonarQube dashboard, went to Project Settings → Quality Gate, and enabled "Always use a specific Quality Gate", selecting the one I just created. Next, to allow SonarQube to notify Jenkins, I created a webhook by navigating to Project Settings → Webhooks → Create. I named it "Jenkins-webhook" and set the URL to http://"private IP of Jenkins":8080/sonarqube-webhook
+
+# Testing the connection between Jenkins, SonarQube, and AWS S3
+
+
+
