@@ -21,3 +21,9 @@ Once the instance was running, SonarQube was accessed via a web browser using th
 I created an S3 bucket named "jenkinspipelines3bucket".
 I created an IAM policy with a JSON document that allows Jenkins to access the S3 bucket without requiring credentials, so that they wouldn’t be exposed in the pipeline, and named the policy "bucket policy" (S3_bucket.json).
 
+# IAM Role
+
+I accessed the IAM Roles for the Jenkins EC2 instance and created a role named "s3BucketPolicy" with permissions for the "jenkinspipelines3bucket".
+I then returned to the Jenkins instance, navigated to Actions → Security → Modify IAM Role, and attached the "s3BucketPolicy".
+This approach allows Jenkins to interact with the S3 bucket during pipeline execution without using AWS credentials.
+
