@@ -16,6 +16,11 @@ pipeline {
                 sh 'java -version'
             }
         }
+        stage('Fetch Source Code') {
+            steps {
+                git branch: 'main', url: 'https://github.com/Marko-devops/Jenkins_pipeline_test_with_SonarQube'
+            }
+        }
      
          stage('SonarQube Analysis') {
             environment {
@@ -43,7 +48,6 @@ pipeline {
             }
         }
         
-
         stage('Upload to S3') {
             steps {
                 sh '''
@@ -53,4 +57,5 @@ pipeline {
             }
         }
     }
+}
 }
