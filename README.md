@@ -60,5 +60,6 @@ After a successful pipeline test, I added a stage 'Fetch Source Code'.
 In the SonarQube analysis stage, I configured it to test the (test-setup.sh) file from the repository, and in the AWS S3 stage, I set it to upload the same file that was tested.
 
 - https://github.com/Marko-devops/Jenkins_pipeline_test_with_SonarQube/blob/main/Screenshots/Pipeline%20stages.png
+- https://github.com/Marko-devops/Jenkins_pipeline_test_with_SonarQube/blob/main/Screenshots/Results%20from%20SonarQube.png
 
 
