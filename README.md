@@ -61,5 +61,5 @@ In the SonarQube analysis stage, I configured it to test the (test-setup.sh) fil
 
 - https://github.com/Marko-devops/Jenkins_pipeline_test_with_SonarQube/blob/main/Screenshots/Pipeline%20stages.png
 - https://github.com/Marko-devops/Jenkins_pipeline_test_with_SonarQube/blob/main/Screenshots/Results%20from%20SonarQube.png
-
+- https://github.com/Marko-devops/Jenkins_pipeline_test_with_SonarQube/blob/main/Screenshots/Test-setup.sh%20uploaded%20to%20S3%20bucket%20after%20a%20successful%20pipeline%20run..png
 
