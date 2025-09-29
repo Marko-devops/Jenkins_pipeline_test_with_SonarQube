@@ -19,5 +19,5 @@ Once the instance was running, SonarQube was accessed via a web browser using th
 # S3 bucket on AWS
 
 I created an S3 bucket named "jenkinspipelines3bucket".
-I created an IAM policy with a JSON document that allows Jenkins to access the S3 bucket without requiring credentials, so that they wouldn’t be exposed in the pipeline, and named the policy "bucket policy":
+I created an IAM policy with a JSON document that allows Jenkins to access the S3 bucket without requiring credentials, so that they wouldn’t be exposed in the pipeline, and named the policy "bucket policy" (S3_bucket.json).
 
