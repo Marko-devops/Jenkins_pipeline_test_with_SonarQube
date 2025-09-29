@@ -1,6 +1,6 @@
 # Jenkins Ec2 on AWS
 
-I launched an EC2 instance on AWS named Jenkins_server using the Ubuntu AMI and t2.small instance type, with a Jenkins_key for secure access, configured the Jenkins_sg security group, provided a user data script (Jenkins.sh) to automate Jenkins installation at launch, accessed Jenkins via the instance’s public IP on port 8080. 
+I launched an EC2 instance on AWS named "Jenkins_server" using the Ubuntu AMI and t2.small instance type, with a Jenkins_key for secure access, configured the Jenkins_sg security group, provided a user data script (Jenkins.sh) to automate Jenkins installation at launch, accessed Jenkins via the instance’s public IP on port 8080. 
 
 After launching the SonarQube Ec2 instance I added in Jenkins security gorup, inbound rules from SonarQube_sg to allow communication between Jenkins and SonarQube. 
 
@@ -13,7 +13,7 @@ The output showed the installed JDK directory /usr/lib/jvm/java-17-openjdk-amd64
 
 # SonarQube Ec2 on AWS
 
-I launched an EC2 instance on AWS named "SonarQube" using the Ubuntu AMI and t2.medium instance type. A SonarQube key was created for secure access. The "SonarQube_sg" security group was configured, including inbound rules from "Jenkins_sg" to allow communication between SonarQube and Jenkins. A user data script (SonarQube.sh) was provided during instance creation to automate the installation and setup of SonarQube at launch.
+I launched an EC2 instance on AWS named "SonarQube_server" using the Ubuntu AMI and t2.medium instance type. A SonarQube key was created for secure access. The "SonarQube_sg" security group was configured, including inbound rules from "Jenkins_sg" to allow communication between SonarQube and Jenkins. A user data script (SonarQube.sh) was provided during instance creation to automate the installation and setup of SonarQube at launch.
 Once the instance was running, SonarQube was accessed via a web browser using the instance’s public IP address on port 80.
 
 # AWS Ec2 instances
